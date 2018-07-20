@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: green;
+}
+
+/*a:hover {
+  color: pink;
+  box-shadow: 1px 1px 1px 1px pink;
+}*/
+
+.weather-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.weather-card {
+  padding: 1em 0;
+  width: 150px;
+}
+
+.weather-card:hover {
+  color: pink;
+  box-shadow: 1px 1px 1px 1px pink;
+}
+
+.weather-details {
+  text-transform: capitalize;
+}
+
+.weather-details a:hover {
+  color: pink;
+}
+
+.weather-card {
+  margin-right: 2em;
+}
+
+.day-of-week {
+  font-size: 1em;
+}
+
+.temperatures-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.weather-image {
+  margin-top: 1em;
+}
+
+.high-temp {
+  margin: 0 0 0 10px;
+}
+
+.high-temp:after {
+  content: "\00b0"
+}
+
+.low-temp {
+  margin: 0 0 0 10px;
+}
+
+.low-temp:after {
+  content: "\00b0"
+}
+
+.description {
+  font-size: 1em;
+}
+
