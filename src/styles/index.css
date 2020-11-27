@@ -6,13 +6,13 @@ body {
 
 a {
   text-decoration: none;
-  color: green;
+  color: #000;
 }
 
-/*a:hover {
-  color: pink;
-  box-shadow: 1px 1px 1px 1px pink;
-}*/
+a:hover {
+  /* color: rgb(192, 255, 250); */
+  /* box-shadow: 1px 1px 1px 1px pink; */
+}
 
 .weather-list {
   display: flex;
@@ -26,8 +26,8 @@ a {
 }
 
 .weather-card:hover {
-  color: pink;
-  box-shadow: 1px 1px 1px 1px pink;
+  color: rgb(17, 87, 81);
+  /* box-shadow: 1px 1px 1px 1px pink; */
 }
 
 .weather-details {

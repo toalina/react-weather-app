@@ -15,16 +15,7 @@ class Main extends Component {
       weatherForecast: []
     }
   }
-
-   // site that doesn’t send Access-Control-*
-// fetch(proxyurl + url).then((resp) => resp.json())
-//   .then(function(data) {
-//     console.log(data);
-//   })
-//   .catch(function(error) {
-//     console.log(error);
-//   }); 
-
+  
   componentDidMount () {
     fetch(PROXY_URL + URL)
       .then(results => {

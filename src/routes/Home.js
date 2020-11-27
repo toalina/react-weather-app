@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import '../styles/App.css'
 import '../styles/index.css'
 import WeatherCard from '../components/WeatherCard'
+import Graph from '../components/Graph'
 
 const Home = (props) => {
   return (
@@ -31,6 +32,7 @@ const Home = (props) => {
           })
         }
       </ul>
+      <Graph />
     </div>
   )
 }
