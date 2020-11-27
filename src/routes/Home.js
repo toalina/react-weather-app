@@ -1,10 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/App.css'
 import '../styles/index.css'
 import WeatherCard from '../components/WeatherCard'
-
-var moment = require('moment')
 
 const Home = (props) => {
   return (

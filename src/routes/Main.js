@@ -5,6 +5,9 @@ import WeatherDetails from './WeatherDetails'
 
 var moment = require('moment')
 
+const PROXY_URL = "https://cors-anywhere.herokuapp.com/";
+const URL = 'https://api.darksky.net/forecast/1c8050d02fc7e319e1f369468c3c2dc4/37.8267,-122.4233';
+
 class Main extends Component {
   constructor (props) {
     super()
@@ -13,8 +16,17 @@ class Main extends Component {
     }
   }
 
+   // site that doesn’t send Access-Control-*
+// fetch(proxyurl + url).then((resp) => resp.json())
+//   .then(function(data) {
+//     console.log(data);
+//   })
+//   .catch(function(error) {
+//     console.log(error);
+//   }); 
+
   componentDidMount () {
-    fetch('https://api.darksky.net/forecast/1c8050d02fc7e319e1f369468c3c2dc4/37.8267,-122.4233')
+    fetch(PROXY_URL + URL)
       .then(results => {
         return results.json()
       }).then(data => {
