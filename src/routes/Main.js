@@ -21,6 +21,7 @@ class Main extends Component {
       .then(results => {
         return results.json()
       }).then(data => {
+        console.log(data);
         const newWeatherForecast = data.daily.data.map((weather, i) => {
           return {
             id: i,

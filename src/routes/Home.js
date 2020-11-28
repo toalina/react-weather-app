@@ -32,7 +32,9 @@ const Home = (props) => {
           })
         }
       </ul>
-      <Graph />
+      {/* <Graph 
+        data={props.weatherForecast}
+      /> */}
     </div>
   )
 }
