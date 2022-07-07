@@ -9,7 +9,7 @@
     "@visx/scale": "^1.1.0",
     "@visx/shape": "^1.2.0",
     "@vx/axis": "^0.0.199",
-    "moment": "2.29.1",
+    "moment": "2.29.4",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-router-dom": "5.2.0",
